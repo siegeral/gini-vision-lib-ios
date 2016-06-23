@@ -20,7 +20,7 @@
         <a class="header-link" href="../index.html">
           GiniVision Docs
         </a>
-         (49% documented)
+         (30% documented)
       </p>
     
         <p class="header-col header-col--secondary">
@@ -93,20 +93,7 @@
         <section class="section">
           <div class="section-content">
             <h1>GINIVisionDelegate</h1>
-              <div class="declaration">
-                <div class="language">
-                  <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">GINIVisionDelegate</span></code></pre>
-
-                </div>
-              </div>
-            <p>Delegate to inform the reveiver about the current status of the Gini Vision Library.
-Make use of callbacks for handling incoming data and to control view controller presentation.</p>
-
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    ScreenAPI only
-
-</div>
+            <p>Undocumented</p>
 
           </div>
         </section>
@@ -128,36 +115,8 @@ Make use of callbacks for handling incoming data and to control view controller 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Called when the user took an image.</p>
+                        <p>Undocumented</p>
 
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">didCapture</span><span class="p">(</span><span class="nv">imageData</span><span class="p">:</span> <span class="kt">NSData</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>imageData</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>JPEG image data including meta information.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
                       </div>
                     </section>
                   </div>
@@ -175,49 +134,8 @@ Make use of callbacks for handling incoming data and to control view controller 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Called when the user reviewed the image and potentially rotated it to reading order.</p>
+                        <p>Undocumented</p>
 
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">didReview</span><span class="p">(</span><span class="nv">imageData</span><span class="p">:</span> <span class="kt">NSData</span><span class="p">,</span> <span class="n">withChanges</span> <span class="nv">changes</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>imageData</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>JPEG image data including eventually updated meta information.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>changes</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Indicates whether <code>imageData</code> was altered.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
                       </div>
                     </section>
                   </div>
@@ -235,16 +153,8 @@ Make use of callbacks for handling incoming data and to control view controller 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Called when the user canceles capturing on the camera screen. Should be used to dismiss the presented view controller.</p>
+                        <p>Undocumented</p>
 
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">didCancelCapturing</span><span class="p">()</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -262,16 +172,8 @@ Make use of callbacks for handling incoming data and to control view controller 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Called when the user navigates back from the review screen to the camera potentially to retake an image. Should be used to cancel any ongoing analysis task on the image.</p>
+                        <p>Undocumented</p>
 
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didCancelReview</span><span class="p">()</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -289,16 +191,8 @@ Make use of callbacks for handling incoming data and to control view controller 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Called when the user navigates back from the analysis screen to the review screen. Should be used to cancel any ongoing analysis task on the image.</p>
+                        <p>Undocumented</p>
 
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didCancelAnalysis</span><span class="p">()</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
