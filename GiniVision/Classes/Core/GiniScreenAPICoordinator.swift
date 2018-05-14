@@ -162,7 +162,7 @@ extension GiniScreenAPICoordinator {
         }
     }
     
-    func update(_ document: GiniVisionDocument, withError error: GiniVisionError?, isUploaded: Bool) {
+    func update(_ document: GiniVisionDocument, withError error: Error?, isUploaded: Bool) {
         if let index = documentRequests.index(of: document) {
             documentRequests[index].isUploaded = isUploaded
             documentRequests[index].error = error
